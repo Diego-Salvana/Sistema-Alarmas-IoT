@@ -1,8 +1,10 @@
 # Sistema de Alarmas IoT
 
-Sistema completo de **alarma domótica inteligente**, diseñado como una solución full stack que permite **monitorear, controlar y gestionar sistemas de seguridad en tiempo real** desde web y dispositivos móviles.
+Sistema completo de **alarma domótica inteligente**, desarrollado como una solución full stack que permite **monitorear, controlar y gestionar sistemas de seguridad en tiempo real** desde web y dispositivos móviles.
 
-Este proyecto integra **frontend, backend y comunicación con dispositivos físicos**, utilizando tecnologías modernas y una arquitectura escalable.
+> *Este repositorio actúa como punto de entrada al sistema y centraliza el acceso a sus componentes (frontend y backend).*
+
+El proyecto integra **frontend, backend y comunicación con dispositivos físicos**, utilizando tecnologías modernas y una arquitectura escalable.
 
 ## Descripción General
 
@@ -19,6 +21,31 @@ La solución combina:
 - Backend robusto con lógica de negocio
 - Comunicación en tiempo real
 - Integración con dispositivos IoT mediante MQTT
+
+## Vista del Sistema
+
+### Dashboard
+<div align="center">
+  <img src="./images/dashboard.png" width="180px"/>
+  <img src="./images/dashboard-desktop.png" width="620px"/>
+</div>
+
+### Armado de alarma + Sensores
+<div align="center">
+  <img src="./images/arming.png" width="180px"/>
+  <img src="./images/arming-dark.png" width="180px"/>
+  <img src="./images/sensor.png" width="180px"/>
+  <img src="./images/sensor-dark.png" width="180px"/>
+</div>
+
+## Demo
+
+Podés probar la aplicación en:
+
+🔗 https://alarmstech.vercel.app
+
+> *Algunas funcionalidades requieren autenticación.*  
+> *Usuario de prueba disponible bajo solicitud.*
 
 ## Arquitectura del Sistema
 
@@ -56,11 +83,11 @@ Flujo simplificado de comunicación:
 2. El frontend envía una request al backend
 3. El backend procesa la lógica y publica un evento MQTT
 4. El dispositivo responde
-5. El backend emite un evento por WebSocket y persiste en Base de Datos
+5. El backend emite un evento por WebSocket y persiste en Base de Datos (*)
 6. El frontend actualiza la interfaz en tiempo real
 
-> La persistencia se realiza de forma asíncrona para no bloquear la comunicación en tiempo real.
-> 
+(*) La persistencia se realiza de forma asíncrona para no bloquear la comunicación en tiempo real.
+
 ## Features Principales
 
 - 🔐 Autenticación de usuarios
@@ -72,36 +99,11 @@ Flujo simplificado de comunicación:
 - 📱 Aplicación mobile (Capacitor)
 - 🌐 Arquitectura escalable y modular
 
-## Vista del Sistema
-
-### Dashboard
-<div align="center">
-  <img src="./images/dashboard.png" width="180px"/>
-  <img src="./images/dashboard-desktop.png" width="620px"/>
-</div>
-
-### Armado de alarma + Sensores
-<div align="center">
-  <img src="./images/arming.png" width="180px"/>
-  <img src="./images/arming-dark.png" width="180px"/>
-  <img src="./images/sensor.png" width="180px"/>
-  <img src="./images/sensor-dark.png" width="180px"/>
-</div>
-
-## Demo
-
-Podés probar la aplicación en:
-
-🔗 https://tu-app.vercel.app
-
-> Algunas funcionalidades requieren autenticación.  
-> Usuario de prueba disponible bajo solicitud.
-
 ## Repositorios del Proyecto
 
 ### 🖥️ Frontend
 Repositorio: *(privado)*  
-> Disponible bajo solicitud
+> *Disponible bajo solicitud*
 
 Incluye:
 - Aplicación Angular
@@ -153,7 +155,3 @@ El sistema se encuentra en mejora continua, enfocado en optimización y nuevas f
 - 📊 Analíticas y métricas del sistema
 - 🔔 Notificaciones push
 - 🧠 Automatizaciones basadas en eventos
-
-## Notas
-
-Este repositorio actúa como **punto central del sistema**, documentando la arquitectura general y enlazando a cada una de sus capas.
