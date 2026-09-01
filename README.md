@@ -44,8 +44,10 @@ Podés probar la aplicación en:
 
 🔗 https://alarmstech.vercel.app
 
-> *Algunas funcionalidades requieren autenticación.*  
-> *Usuario de prueba disponible bajo solicitud.*
+- **Usuario demo:** `demouser@example.com`
+- **Contraseña:** `Demouser`
+
+> *Algunas funcionalidades están restringidas para el usuario demo. Para probar todas las funcionalidades de la aplicación, podés crear y validar una cuenta propia.*
 
 ## Arquitectura del Sistema
 
@@ -102,8 +104,7 @@ Flujo simplificado de comunicación:
 ## Repositorios del Proyecto
 
 ### 🖥️ Frontend
-Repositorio: *(privado)*  
-> *Disponible bajo solicitud*
+Repositorio: https://github.com/Diego-Salvana/alarma-app
 
 Incluye:
 - Aplicación Angular
